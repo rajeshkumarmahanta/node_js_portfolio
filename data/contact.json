@@ -1,0 +1,17 @@
+{
+  "pageTitle": "Contact",
+  "heading": "Let's work together",
+  "subheading": "No forms here — just email me directly. I usually reply within a day.",
+  "email": "razeshmahanta@gmail.com",
+  "quickSubjects": [
+    { "label": "Project Enquiry", "icon": "bi-briefcase", "subject": "Project Enquiry", "body": "Hi Rajesh,\n\nI'd like to discuss a project:\n\n- Type of website:\n- Features needed:\n- Timeline:\n\nThanks," },
+    { "label": "Job Opportunity", "icon": "bi-person-workspace", "subject": "Job Opportunity", "body": "Hi Rajesh,\n\nI came across your portfolio and would like to talk about an opportunity.\n\n" },
+    { "label": "Just Saying Hi", "icon": "bi-chat-heart", "subject": "Hello from your portfolio", "body": "Hi Rajesh,\n\n" }
+  ],
+  "infoCards": [
+    { "icon": "bi-envelope-at", "title": "Email", "value": "razeshmahanta@gmail.com", "href": "mailto:razeshmahanta@gmail.com" },
+    { "icon": "bi-geo-alt", "title": "Location", "value": "Odisha, India", "href": "" },
+    { "icon": "bi-clock", "title": "Response time", "value": "Within 24 hours", "href": "" }
+  ],
+  "openTo": ["E-commerce store setup & management", "Custom CMS development", "Booking & payment systems", "Backend / API work", "Full-time backend roles"]
+}

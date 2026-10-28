@@ -1,0 +1,106 @@
+<%- include('partials/head') %>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <span class="status-pill mb-4"><span class="dot"></span><%= home.hero.availability %></span>
+        <p class="hero-greeting mb-1"><%= home.hero.greeting %></p>
+        <h1 class="hero-title mb-3"><%= home.hero.name %></h1>
+        <h2 class="hero-role mb-4">
+          <span class="mono text-accent">&gt;</span>
+          <span id="typed" data-roles='<%- JSON.stringify(home.hero.typedRoles).replace(/'/g, "&#39;") %>'><%= home.hero.typedRoles[0] %></span><span class="caret">|</span>
+        </h2>
+        <p class="lead text-soft mb-4 col-xl-10"><%= home.hero.intro %></p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="<%= home.hero.primaryCta.href %>" class="btn btn-accent btn-lg px-4"><%= home.hero.primaryCta.label %> <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="<%= home.hero.secondaryCta.href %>" class="btn btn-ghost btn-lg px-4"><i class="bi bi-envelope me-1"></i> <%= home.hero.secondaryCta.label %></a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="code-window reveal">
+          <div class="code-bar"><span></span><span></span><span></span><em>developer.json</em></div>
+<pre class="code-body mb-0"><code>{
+  <span class="k">"name"</span>: <span class="s">"<%= site.name %>"</span>,
+  <span class="k">"role"</span>: <span class="s">"<%= site.role %>"</span>,
+  <span class="k">"company"</span>: <span class="s">"Inflexi Technologies"</span>,
+  <span class="k">"stack"</span>: [
+    <span class="s">"Node.js"</span>, <span class="s">"Express"</span>, <span class="s">"PHP"</span>,
+    <span class="s">"Laravel"</span>, <span class="s">"MySQL"</span>, <span class="s">"MongoDB"</span>
+  ],
+  <span class="k">"builds"</span>: <span class="s">"CMS · E-commerce · Bookings"</span>,
+  <span class="k">"available"</span>: <span class="b">true</span>
+}</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-5 stats-row">
+      <% home.stats.forEach(function (s) { %>
+        <div class="col-6 col-md-3">
+          <div class="stat reveal">
+            <div class="stat-value"><%= s.value %></div>
+            <div class="stat-label"><%= s.label %></div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What I do</p>
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="row g-4">
+      <% home.services.forEach(function (s) { %>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card h-100 reveal">
+            <div class="icon-box"><i class="bi <%= s.icon %>"></i></div>
+            <h3 class="h5 mt-3 mb-2"><%= s.title %></h3>
+            <p class="text-soft small mb-0"><%= s.text %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head d-flex flex-wrap justify-content-between align-items-end gap-3">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title"><%= home.featuredHeading %></h2>
+        <p class="text-soft mb-0"><%= home.featuredSubheading %></p>
+      </div>
+      <a href="/portfolio" class="btn btn-ghost">All projects <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="row g-4">
+      <% featured.forEach(function (project) { %>
+        <div class="col-md-6 col-lg-4 reveal"><%- include('partials/project-card', { project }) %></div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2 class="h2 mb-2"><%= home.ctaBanner.title %></h2>
+        <p class="mb-0 text-soft"><%= home.ctaBanner.text %></p>
+      </div>
+      <a href="<%= home.ctaBanner.href %>" class="btn btn-accent btn-lg"><i class="bi bi-envelope-paper me-2"></i><%= home.ctaBanner.buttonLabel %></a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

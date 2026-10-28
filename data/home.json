@@ -1,0 +1,49 @@
+{
+  "pageTitle": "Home",
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Rajesh Mahanta",
+    "typedRoles": ["Backend Developer", "E-commerce Specialist", "Custom CMS Builder", "Node.js & PHP Developer"],
+    "intro": "I build and manage e-commerce platforms, custom CMS projects and booking systems — from database design to the admin panel your team uses every day.",
+    "primaryCta": { "label": "View My Work", "href": "/portfolio" },
+    "secondaryCta": { "label": "Email Me", "href": "mailto:razeshmahanta@gmail.com" },
+    "availability": "Currently at Inflexi Technologies Pvt. Ltd."
+  },
+  "stats": [
+    { "value": "5+", "label": "Full CMS projects" },
+    { "value": "3", "label": "E-commerce platforms" },
+    { "value": "20+", "label": "Technologies" },
+    { "value": "100%", "label": "Dynamic, admin-driven sites" }
+  ],
+  "services": [
+    {
+      "icon": "bi-cart-check",
+      "title": "E-commerce Management",
+      "text": "BigCommerce (Stencil) and WooCommerce stores — inventory, product create / update / delete, bulk data changes and theme customisation."
+    },
+    {
+      "icon": "bi-layout-text-window-reverse",
+      "title": "Custom CMS Development",
+      "text": "Admin panels that let clients manage every page, image and record on their website without touching code."
+    },
+    {
+      "icon": "bi-calendar2-check",
+      "title": "Booking & Payments",
+      "text": "Booking systems with availability, admin approval flows and online payment integration."
+    },
+    {
+      "icon": "bi-hdd-network",
+      "title": "Backend & APIs",
+      "text": "REST APIs and server logic with Node.js / Express and PHP / Laravel, on MySQL or MongoDB."
+    }
+  ],
+  "featuredHeading": "Featured Projects",
+  "featuredSubheading": "A few things I've designed, built and shipped end-to-end.",
+  "featuredCount": 3,
+  "ctaBanner": {
+    "title": "Have a project in mind?",
+    "text": "Whether it's a store, a CMS or a booking system — drop me an email and let's talk.",
+    "buttonLabel": "razeshmahanta@gmail.com",
+    "href": "mailto:razeshmahanta@gmail.com?subject=Project%20Enquiry"
+  }
+}

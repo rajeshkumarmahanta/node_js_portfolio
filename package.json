@@ -1,0 +1,19 @@
+{
+  "name": "rajesh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Rajesh Mahanta — Node.js, Express, EJS and Bootstrap, with all content served from JSON files.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js --ext js,json,ejs"
+  },
+  "author": "Rajesh Mahanta <razeshmahanta@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

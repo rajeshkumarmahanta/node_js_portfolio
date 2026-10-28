@@ -1,0 +1,55 @@
+<%- include('partials/head') %>
+
+<section class="page-header project-header" style="--card-accent: <%= project.accent %>;">
+  <div class="container">
+    <a href="/portfolio" class="back-link mb-4 d-inline-block"><i class="bi bi-arrow-left me-1"></i> All projects</a>
+    <div class="d-flex align-items-center gap-3 mb-3">
+      <div class="project-icon-lg"><i class="bi <%= project.icon %>"></i></div>
+      <div>
+        <p class="eyebrow mb-1"><%= project.category %></p>
+        <h1 class="display-6 fw-bold mb-0"><%= project.title %></h1>
+      </div>
+    </div>
+    <p class="lead text-soft col-lg-8 mb-0"><%= project.summary %></p>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <h2 class="h4 mb-3">Overview</h2>
+        <p class="text-soft-strong lh-lg mb-5"><%= project.description %></p>
+
+        <h2 class="h4 mb-3">Key Features</h2>
+        <ul class="tick-list feature-list">
+          <% project.features.forEach(function (f) { %><li><%= f %></li><% }) %>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="facts-card sticky-lg-top" style="top: 100px;">
+          <h3 class="h6 text-uppercase text-soft mb-3 ls-wide">Tech Stack</h3>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <% project.tech.forEach(function (t) { %><span class="chip chip-lg"><%= t %></span><% }) %>
+          </div>
+          <h3 class="h6 text-uppercase text-soft mb-3 ls-wide">Tags</h3>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <% project.tags.forEach(function (t) { %><span class="chip chip-accent"><%= t %></span><% }) %>
+          </div>
+          <div class="d-grid gap-2">
+            <% if (project.liveUrl) { %><a href="<%= project.liveUrl %>" target="_blank" rel="noopener" class="btn btn-accent"><i class="bi bi-box-arrow-up-right me-1"></i> Live site</a><% } %>
+            <% if (project.repoUrl) { %><a href="<%= project.repoUrl %>" target="_blank" rel="noopener" class="btn btn-ghost"><i class="bi bi-github me-1"></i> Source code</a><% } %>
+            <a href="mailto:<%= site.email %>?subject=<%= encodeURIComponent('About your ' + project.title + ' project') %>" class="btn btn-ghost"><i class="bi bi-envelope me-1"></i> Ask about this project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-nav mt-5">
+      <a href="/portfolio/<%= prev.slug %>"><small>Previous</small><span><i class="bi bi-arrow-left me-1"></i><%= prev.title %></span></a>
+      <a href="/portfolio/<%= next.slug %>" class="text-end"><small>Next</small><span><%= next.title %><i class="bi bi-arrow-right ms-1"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

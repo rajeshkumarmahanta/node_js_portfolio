@@ -1,0 +1,56 @@
+<%- include('partials/head') %>
+<%- include('partials/page-header', { eyebrow: 'Contact', heading: contact.heading, subheading: contact.subheading }) %>
+
+<section class="section pt-0">
+  <div class="container">
+    <!-- Big email card -->
+    <div class="email-hero reveal">
+      <p class="eyebrow mb-2">Write to me at</p>
+      <a href="mailto:<%= contact.email %>" class="email-big"><%= contact.email %></a>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+        <a href="mailto:<%= contact.email %>" class="btn btn-accent btn-lg px-4"><i class="bi bi-send me-2"></i>Open mail app</a>
+        <button type="button" class="btn btn-ghost btn-lg px-4" data-copy="<%= contact.email %>"><i class="bi bi-clipboard me-2"></i>Copy email</button>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=<%= contact.email %>" target="_blank" rel="noopener" class="btn btn-ghost btn-lg px-4"><i class="bi bi-google me-2"></i>Gmail</a>
+      </div>
+    </div>
+
+    <!-- Quick subject templates -->
+    <div class="mt-5">
+      <h2 class="h5 mb-3 text-center">Or start with a ready-made email</h2>
+      <div class="row g-3 justify-content-center">
+        <% contact.quickSubjects.forEach(function (q) { %>
+          <div class="col-md-4">
+            <a class="quick-mail reveal" href="mailto:<%= contact.email %>?subject=<%= encodeURIComponent(q.subject) %>&body=<%= encodeURIComponent(q.body) %>">
+              <i class="bi <%= q.icon %>"></i>
+              <span><%= q.label %></span>
+              <i class="bi bi-arrow-up-right ms-auto"></i>
+            </a>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <% contact.infoCards.forEach(function (c) { %>
+        <div class="col-md-4">
+          <div class="info-card reveal">
+            <div class="icon-box"><i class="bi <%= c.icon %>"></i></div>
+            <div>
+              <div class="fact-label"><%= c.title %></div>
+              <% if (c.href) { %><a class="fact-value" href="<%= c.href %>"><%= c.value %></a><% } else { %><div class="fact-value"><%= c.value %></div><% } %>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <div class="open-to mt-5 reveal">
+      <h2 class="h5 mb-3">I'm open to</h2>
+      <div class="d-flex flex-wrap gap-2">
+        <% contact.openTo.forEach(function (o) { %><span class="chip chip-lg"><i class="bi bi-check2 me-1 text-accent"></i><%= o %></span><% }) %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,20 @@
+{
+  "name": "Rajesh Mahanta",
+  "shortName": "RM",
+  "role": "Backend Developer",
+  "email": "razeshmahanta@gmail.com",
+  "location": "Odisha, India",
+  "metaDescription": "Rajesh Mahanta — Backend Developer building e-commerce platforms, custom CMS projects and booking systems with Node.js, PHP, Laravel and MySQL.",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "socials": [
+    { "label": "GitHub", "icon": "bi-github", "url": "https://github.com/" },
+    { "label": "LinkedIn", "icon": "bi-linkedin", "url": "https://www.linkedin.com/" },
+    { "label": "Email", "icon": "bi-envelope-fill", "url": "mailto:razeshmahanta@gmail.com" }
+  ],
+  "footerNote": "Built with Node.js, Express, EJS & Bootstrap — content served from JSON."
+}

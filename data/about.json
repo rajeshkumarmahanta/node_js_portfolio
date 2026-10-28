@@ -1,0 +1,71 @@
+{
+  "pageTitle": "About",
+  "heading": "About Me",
+  "subheading": "Backend developer who enjoys turning business requirements into reliable, admin-friendly websites.",
+  "bio": [
+    "I'm Rajesh Mahanta, a backend developer currently working at Inflexi Technologies Private Limited. My day-to-day work revolves around managing e-commerce websites — handling inventory, creating, updating, editing and deleting products, and keeping all of a website's data accurate and up to date.",
+    "Alongside store management, I build custom CMS projects from scratch: admin dashboards that let clients control their content, bookings and payments themselves. I've built complete CMS-driven websites for a photography studio, a real-estate business, a temple (Ved Mandir), a solar company, and a visitor management system.",
+    "I like clean database design, predictable APIs and admin panels that non-technical people actually enjoy using."
+  ],
+  "quickFacts": [
+    { "icon": "bi-briefcase", "label": "Role", "value": "Backend Developer" },
+    { "icon": "bi-building", "label": "Company", "value": "Inflexi Technologies Pvt. Ltd." },
+    { "icon": "bi-geo-alt", "label": "Location", "value": "Odisha, India" },
+    { "icon": "bi-envelope", "label": "Email", "value": "razeshmahanta@gmail.com" }
+  ],
+  "skillGroups": [
+    {
+      "title": "Backend",
+      "icon": "bi-server",
+      "skills": ["Node.js", "Express.js", "PHP", "Laravel", "NotORM", "Python (basics)"]
+    },
+    {
+      "title": "Frontend",
+      "icon": "bi-window",
+      "skills": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "EJS"]
+    },
+    {
+      "title": "Databases",
+      "icon": "bi-database",
+      "skills": ["MySQL", "MongoDB"]
+    },
+    {
+      "title": "E-commerce & CMS",
+      "icon": "bi-bag",
+      "skills": ["BigCommerce", "Stencil", "WooCommerce", "WordPress", "Custom CMS"]
+    },
+    {
+      "title": "Tools & Design",
+      "icon": "bi-tools",
+      "skills": ["Git", "GitHub", "Photoshop", "Canva"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Backend Developer",
+      "company": "Inflexi Technologies Private Limited",
+      "period": "Present",
+      "points": [
+        "Manage e-commerce websites on BigCommerce and WooCommerce.",
+        "Handle inventory and product lifecycle — create, update, edit and delete products and bulk data.",
+        "Maintain and update all website data and content for clients.",
+        "Design and develop custom CMS projects and admin panels."
+      ]
+    },
+    {
+      "role": "Freelance / Personal Projects",
+      "company": "Independent",
+      "period": "Ongoing",
+      "points": [
+        "Built full CMS websites with booking systems and online payment.",
+        "Developed a visitor management system for tracking and reporting entries.",
+        "Handled the complete stack — database, backend, admin panel and frontend."
+      ]
+    }
+  ],
+  "values": [
+    { "icon": "bi-shield-check", "title": "Reliable", "text": "Data integrity first — validated inputs, clean schemas, safe updates." },
+    { "icon": "bi-sliders", "title": "Admin-friendly", "text": "Every site I build can be managed by the client without a developer." },
+    { "icon": "bi-lightning-charge", "title": "Practical", "text": "Simple, maintainable code that ships and keeps working." }
+  ]
+}

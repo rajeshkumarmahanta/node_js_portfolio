@@ -1,0 +1,113 @@
+{
+  "pageTitle": "Portfolio",
+  "heading": "Portfolio",
+  "subheading": "Complete, CMS-driven projects — every page, image and record managed from an admin panel.",
+  "filters": ["All", "CMS", "Booking", "Payments", "Management System"],
+  "projects": [
+    {
+      "slug": "photography-website",
+      "title": "Photography Website",
+      "category": "Full CMS + Booking",
+      "tags": ["CMS", "Booking"],
+      "icon": "bi-camera",
+      "accent": "#ff7a45",
+      "featured": true,
+      "summary": "A photography studio website with a fully managed gallery and a session booking system.",
+      "description": "A complete website for a photographer where every section — galleries, albums, services, packages and testimonials — is controlled from a custom admin panel. Clients can browse portfolios and book a shoot online; the admin reviews, confirms or reschedules bookings from the dashboard.",
+      "features": [
+        "Admin-managed galleries and albums with image upload",
+        "Service and package management with pricing",
+        "Online session booking with date selection",
+        "Booking dashboard — confirm, reschedule or cancel",
+        "Editable testimonials, about and contact content"
+      ],
+      "tech": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "liveUrl": "",
+      "repoUrl": ""
+    },
+    {
+      "slug": "real-estate-website",
+      "title": "Real Estate Website",
+      "category": "Full CMS + Booking + Online Payment",
+      "tags": ["CMS", "Booking", "Payments"],
+      "icon": "bi-buildings",
+      "accent": "#3fb6a8",
+      "featured": true,
+      "summary": "Property listings with search, site-visit booking and online payment — all admin-managed.",
+      "description": "A real-estate platform where the admin adds and manages property listings with photos, pricing, location and amenities. Visitors can search and filter properties, book a site visit or reservation, and pay online. Bookings and payments are tracked in the admin dashboard.",
+      "features": [
+        "Property CRUD with multiple images and amenities",
+        "Search and filter by type, location and price",
+        "Site visit / reservation booking",
+        "Online payment gateway integration",
+        "Admin dashboard for bookings, payments and enquiries"
+      ],
+      "tech": ["PHP", "Laravel", "MySQL", "Bootstrap", "Payment Gateway"],
+      "liveUrl": "",
+      "repoUrl": ""
+    },
+    {
+      "slug": "vedmandir",
+      "title": "Ved Mandir",
+      "category": "Full CMS + Dynamic Website",
+      "tags": ["CMS"],
+      "icon": "bi-bank2",
+      "accent": "#f2b134",
+      "featured": true,
+      "summary": "A fully dynamic temple website — events, pujas, gallery and announcements managed by the temple team.",
+      "description": "A dynamic website for Ved Mandir where the temple committee manages everything from the admin panel: daily timings, upcoming events and festivals, puja services, photo gallery, announcements and donation information. No content is hard-coded.",
+      "features": [
+        "Fully dynamic pages driven by the CMS",
+        "Events and festival calendar management",
+        "Puja / seva service listings",
+        "Photo gallery and announcements",
+        "Editable temple timings and contact details"
+      ],
+      "tech": ["Node.js", "Express.js", "EJS", "MongoDB", "Bootstrap"],
+      "liveUrl": "",
+      "repoUrl": ""
+    },
+    {
+      "slug": "solar-company-website",
+      "title": "Solar Company Website",
+      "category": "Full CMS",
+      "tags": ["CMS"],
+      "icon": "bi-sun",
+      "accent": "#8bc34a",
+      "featured": false,
+      "summary": "A corporate website for a solar energy company with products, projects and leads managed in a CMS.",
+      "description": "A business website for a solar company showcasing solar products, installation services and completed projects. The admin panel controls products, services, project case studies, banners and incoming enquiries.",
+      "features": [
+        "Product and service management",
+        "Completed-project showcase with images",
+        "Homepage banner and section editing",
+        "Enquiry / lead management in the dashboard",
+        "SEO-friendly dynamic pages"
+      ],
+      "tech": ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "liveUrl": "",
+      "repoUrl": ""
+    },
+    {
+      "slug": "visitor-management-system",
+      "title": "Visitor Management System",
+      "category": "Management System",
+      "tags": ["Management System"],
+      "icon": "bi-person-badge",
+      "accent": "#7c8cff",
+      "featured": false,
+      "summary": "Register, track and report on visitors — check-in, check-out and history in one place.",
+      "description": "A web application for organisations to manage visitors. Reception staff register visitors with their details and purpose of visit, record check-in and check-out times, and look up past visits. Admins get reports and can filter visitor history by date and host.",
+      "features": [
+        "Visitor registration with purpose and host",
+        "Check-in / check-out time tracking",
+        "Searchable visitor history",
+        "Date-wise reports",
+        "Role-based admin access"
+      ],
+      "tech": ["Node.js", "Express.js", "MySQL", "Bootstrap"],
+      "liveUrl": "",
+      "repoUrl": ""
+    }
+  ]
+}

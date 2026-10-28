@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+<%- include('partials/page-header', { eyebrow: 'My work', heading: portfolio.heading, subheading: portfolio.subheading }) %>
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="filter-bar mb-4" role="group" aria-label="Filter projects">
+      <% portfolio.filters.forEach(function (f, i) { %>
+        <button type="button" class="filter-btn <%= i === 0 ? 'active' : '' %>" data-filter="<%= f %>"><%= f %></button>
+      <% }) %>
+    </div>
+
+    <div class="row g-4" id="projectGrid">
+      <% portfolio.projects.forEach(function (project) { %>
+        <div class="col-md-6 col-lg-4 project-col reveal" data-tags="<%= project.tags.join('|') %>">
+          <%- include('partials/project-card', { project }) %>
+        </div>
+      <% }) %>
+    </div>
+    <p class="text-soft text-center mt-4 d-none" id="noResults">No projects in this category yet.</p>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
